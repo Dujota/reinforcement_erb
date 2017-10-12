@@ -1,8 +1,11 @@
 <h1>New Shizzle page</h1>
-<p>
 
-  <%= form_tag new_profile_path do %>
-    <p>Email: <br>
+
+<p>
+  <!-- The form_tag was chosen as this outputs to nowhere as per assignment  -->
+
+  <%= form_tag new_profile_path do -%> <!-- form tag will apply to all the fields and accept their values in its params hash-->
+    <p>Email: <br> <!-- found email field tag in the docs -->
     <%= email_field_tag :email %>
     </p>
     <p>UserName:<br>
@@ -21,7 +24,7 @@
     <%= text_field_tag :alias%>
     </p>
     <%= submit_tag %>
-  <% end %>
+  <% end -%>
 
 </p>
 
